@@ -112,7 +112,9 @@ body
 
 .dslr_camera
 {
-  width: 40%;
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .box
@@ -130,6 +132,7 @@ body
   align-items: center;
   justify-content: center;
   color: white;
+  margin-top: 30px;
 }
 
 .text-wrapper
@@ -146,16 +149,43 @@ body
 .mirroless_camera
 {
   position: relative;
-  left: 50%;
-  width: 40%;
+  left: 60%;
+  width: 30%;
+  margin-top: 10px;
 }
 
 #polaroid_camera
 {
-  width: 35%;
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 #bottom
 {
   text-align: center;
+}
+
+/* .dslr_camera
+{
+  transition: 1s ease;
+}
+
+.dslr_camera:hover
+{
+  transform: scale(1.1);
+} */
+
+#lens_inside
+{
+  animation: lens 1s ease;
+}
+
+@keyframes lens {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  } 
 }

@@ -56,4 +56,19 @@
     // })
 
     seeMoreButtons.forEach(button => button.addEventListener("click", fetchData));
+
+    // -----------------------------Animation----------------------------------
+
+    // console.log("hello!");
+
+    // // var tl = new TimelineMax();
+    // // $('.play').click(function() {
+    // //   tl.from('#bottom', 0.5, {scaleY: 0, transformOrigin: "bottom", ease: Power2.easeOut})
+    // // })
+    
+    // const hamburger = document.querySelector('#bottom')
+
+    // TweenMax.from(hamburger, 2, {x: 100});
+    
+
 })();
