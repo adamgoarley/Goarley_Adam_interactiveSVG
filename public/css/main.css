@@ -81,6 +81,17 @@ p > span { display: block; padding-bottom: 12px; }
 
 
 /* -----------MY PROJECT STARTS HERE----------- */
+
+p 
+{
+  font-family: 'Muli', sans-serif;
+}
+
+h1, h3
+{
+  font-family: 'Bebas Neue', cursive;
+}
+
 .hidden
 { 
   display: none; 
@@ -94,20 +105,21 @@ body
 #header
 {
   background-color: #fdbc5c;
-  height: 150px;
+  height: 110px;
   width: 100%;
   text-align: center;
-  margin-top: 50px;
+  margin-top: -20px;
+  font-size: 20px;
 }
 
 .main-header
 {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .dslr_banner
 {
-  margin-top: 80px; 
+  margin-top: 20px; 
 }
 
 .dslr_camera
@@ -133,18 +145,15 @@ body
   justify-content: center;
   color: white;
   margin-top: 30px;
+  font-family: 'Muli', sans-serif;
 }
 
 .text-wrapper
 {
   text-align: center;
   margin-bottom: 50px;
+  font-size: 14px;
 }
-
-/* .box2
-{
-  float: right;
-} */
 
 .mirroless_camera
 {
@@ -166,16 +175,6 @@ body
   text-align: center;
 }
 
-/* .dslr_camera
-{
-  transition: 1s ease;
-}
-
-.dslr_camera:hover
-{
-  transform: scale(1.1);
-} */
-
 #lens_inside
 {
   animation: lens 1s ease;
@@ -188,4 +187,58 @@ body
   to {
     transform: rotateZ(360deg);
   } 
+}
+
+
+
+
+
+@media screen and (min-width: 640px){
+
+  #header
+{
+  margin-top: -30px;
+  font-size: 30px;
+  height: 150px;
+}
+
+.main-header
+{
+  padding-top: 40px;
+}
+
+.dslr_banner
+{
+  margin-top: 80px; 
+}
+
+.see-more
+{
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 17px;
+}
+
+.text-wrapper
+{
+  font-size: 17px;
+}
+
+#bottom h3 
+{
+  font-size: 25px;
+}
+
+#bottom p
+{
+  font-size: 16px;
+  margin-top: -10px;
+}
+
+}
+
+@media screen and (min-width: 965px){
+
+  /* No Need It Scales Perfect! */
+
 }
