@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/svgdata/:target', (req, res) => {
   // here is where we set up the query 
-  let query = `SELECT * FROM tbl_stats WHERE id="${req.params.target}"`;
+  let query = `SELECT * FROM camera_info WHERE id="${req.params.target}"`;
 
   sql.query(query, (err, result) => {
     if (err) console.log(err); //something broke?!
