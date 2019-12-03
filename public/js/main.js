@@ -6,17 +6,17 @@
     const waypoint = new Waypoint({
         // what element the wayo=point is looking for 
         // the handler will fire when it scrolls into view
-        element: document.getElementById('beer2'),
+        element: document.getElementById('mirroless'),
         // what should we do when we hit the way point?? this is up to you
         // you can trigger animation, do an ajax call... whatever
         handler: function(direction) {
           console.log('Scrolled to waypoint!')
-          this.element.innerHTML += `<p>ADDED WITH WAYPOINTS! we are scrolling ${direction}</p>`;
+          // this.element.innerHTML += `<p>ADDED WITH WAYPOINTS! we are scrolling ${direction}</p>`;
         }
     })
 
     const waypoint2 = new Waypoint({
-        element: document.getElementById('beer3'),
+        element: document.getElementById('polaroid'),
         handler: function(direction) {
           console.log('Scrolled to waypoint 3!');
         },
@@ -24,13 +24,22 @@
         offset: 200
     })
     
+    // function buildPopover(beerdata, el) {
+    //   popOver.querySelector(".ipa-rating").textContent = `IPA Rathing: ${beerdata.Iparating}`;
+    //   popOver.querySelector(".ratings").textContent = `Average Rathing: ${beerdata.ratings}`;
+    //   popOver.querySelector(".beer-description").textContent = beerdata.description;
+
+    //   popOver.classList.add('show-popover');
+    //   el.appendChild(popOver);
+    // }
+
     function buildPopover(beerdata, el) {
-      popOver.querySelector(".ipa-rating").textContent = `IPA Rathing: ${beerdata.Iparating}`;
-      popOver.querySelector(".ratings").textContent = `Average Rathing: ${beerdata.ratings}`;
-      popOver.querySelector(".beer-description").textContent = beerdata.description;
+      popOver.querySelector(".point1").textContent = `1 ${beerdata.point1}`;
+      popOver.querySelector(".point2").textContent = `2 ${beerdata.point2}`;
+      popOver.querySelector(".point3").textContent = `3 ${beerdata.point3}`;
 
       popOver.classList.add('show-popover');
-      el.appendChild(popOver);
+      el.parentNode.appendChild(popOver);
     }
 
     // run the fetch API and the DB data

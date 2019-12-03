@@ -1,84 +1,42 @@
 * { box-sizing: border-box; }
 
-@font-face {
-  font-family: 'brewery';
-  src: url('AmericanBreweryRough.ttf') format('truetype');
+.container 
+{
+  margin: 0 auto;
+  max-width: 1200px;
 }
-body { background-color: #f2f2f2; color: black; font-size: 14px; }
-
-/* .buffer { min-height: 100vh }
-
-
-section { margin-bottom: 100px; color: white; }
-
-section > div:not(.text-wrapper) {
-  width: 30%; display:
-  inline-block;
-  background-color: black;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-}
-
-.text-wrapper {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 30px;
-  width: 65%;
-}
-
-section h3 {
-  display: inline-block;
-  color: black;
-  font-family: 'brewery', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 0
-}
-section p { color: black; width: 70%; font-size: 1.25rem; }
-
-.hidden { display: none; }
-
-.svg-graphic { width: 280px; }
-
-.main-header {
-  margin: 20px 0 0 40px; 
-  font-size: 2rem;
-  font-family: "brewery", sans-serif;
-}
-
-.beer-info { display: inline-block; vertical-align: top; padding: 30px; border: thin solid white; }
-
-p > span { display: block; padding-bottom: 12px; } 
 
 .popover { 
   display: none;
   position: absolute;
-  top: 18%;
-  left: 110%;
+  /* top: 26%; */
+  top: 1%;
+  left: 0%;
   background-color: orange;
-  width: 350px;
+  width: 200px;
+  height: 157px;
   z-index: 1;
-  border-radius: 8px;
-  padding: 4px;
+  border-radius: 25px;
+  padding: 8px;
+  font-family: 'Muli', sans-serif;
+  font-size: 10px;
 }
 
 .show-popover { display: block; }
 
-.see-more { 
+/* .see-more { 
   display: block; 
   padding: 12px 18px; 
   border-radius: 8px; 
   color: white; 
   background-color: rgb(255, 238, 0); 
   margin-top: 8px
-}
+} */
 
 .see-more:hover{
   cursor: pointer;
   opacity: .9;
-} */
-
-
+} 
 
 /* -----------MY PROJECT STARTS HERE----------- */
 
@@ -100,6 +58,11 @@ h1, h3
 body
 {
   background-color: #ffefd3;
+}
+
+.span
+{
+  position: relative;
 }
 
 #header
@@ -144,8 +107,13 @@ body
   align-items: center;
   justify-content: center;
   color: white;
-  margin-top: 30px;
+  margin-top: 80px;
   font-family: 'Muli', sans-serif;
+}
+
+.mirroless_cameraBut
+{
+  margin-top: 150px;
 }
 
 .text-wrapper
@@ -161,6 +129,11 @@ body
   left: 60%;
   width: 30%;
   margin-top: 10px;
+}
+
+#mirroless 
+{
+  /* margin-top: 300px; */
 }
 
 #polaroid_camera
@@ -235,10 +208,36 @@ body
   margin-top: -10px;
 }
 
+.popover { 
+  top: 26%;
+  top: 1%;
+  width: 350px;
+  height: 200px;
+  padding: 15px;
+  font-size: 15px;
+}
+
 }
 
 @media screen and (min-width: 965px){
 
   /* No Need It Scales Perfect! */
+
+  /* body
+  {
+    padding-left: 50px;
+    padding-right: 50px;
+  } */
+
+  .popover { 
+    position: absolute;
+    /* top: 26%; */
+    top: 1%;
+    left: 3%;
+    background-color: orange;
+    width: 500px;
+    height: 250px;
+    font-size: 20px;
+  }
 
 }
