@@ -1,0 +1,235 @@
+
+.container 
+{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+p 
+{
+  font-family: 'Muli', sans-serif; /*------Need to link------- */
+}
+
+h1, h2, h3
+{
+  font-family: 'Muli', sans-serif; /*------Need to link------- */
+}
+
+.hidden
+{ 
+  display: none; 
+}
+
+body
+{
+  background-color: #fffff;
+}
+
+
+/* -----------MY PROJECT STARTS HERE----------- */
+
+/* #logo_mobile
+{
+  margin-top: -180%;
+} */
+
+#first_text_wrapper
+{
+  text-align: center;
+}
+
+#first_text
+{
+   
+  background-color: #FFFFFF;
+  width: 85%;
+  height: 350px;
+  display: inline-block;
+  margin-top: -62%;
+  box-shadow: 0 15px 6px -6px rgb(129, 129, 129);
+
+}
+
+.line
+{
+  width: 80%;
+  height: 2px;
+  background-color: #AF8C74;
+  display: inline-block;
+}
+
+#first_text h2
+{
+  color: #707070;
+  font-size: 30px;
+  font-style: bold;
+  margin-bottom: 0px;
+  margin-left: 30px;
+  text-align: start;
+  margin-top: 30px;
+}
+
+#first_text h3
+{
+  color: #707070;
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-left: 30px;
+  text-align: start;
+}
+
+.arrow
+{
+  opacity: 26%;
+  margin-top: 30px;
+}
+
+#content_1
+{
+  text-align: center;
+}
+
+.tagline
+{
+  /* background-color: red; */
+  width: 100%;
+  height: 145px;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.textlineText h2
+{
+  color: #555555;
+}
+
+.line2
+{
+  width: 40%;
+  height: 3px;
+  background-color: #AF8C74;
+  display: inline-block;
+  margin-bottom: -4px;
+}
+
+.line3
+{
+  width: 40%;
+  height: 3px;
+  background-color: #AF8C74;
+  display: inline-block;
+}
+
+#content_2
+{
+  text-align: center;
+}
+
+#skills_text
+{
+  font-size: 35px;
+  color: #AF8C74;
+}
+
+.skillsBox
+{
+  width: 85%;
+  height: 720px;
+  background-color: white;
+  display: inline-block;
+  box-shadow: 0 15px 6px -6px rgb(129, 129, 129);
+  margin-top: -110%;
+}
+
+#skills_info
+{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
+
+.space
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -----------INFO SQUARES--------------*/
+
+.content
+{
+    background-color: #f8f8f8;
+}
+
+.square1, .square2, .square3
+{
+    display: block;
+    text-align: center;
+}
+.square1Image, .square2Image, .square3Image
+{
+    width: 100%;
+    height: 500px;
+}
+
+.square1Text, .square2Text, .square3Text
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 640px) {
+
+    #infoCircles
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .circle
+    {
+        flex-direction: row;
+    }
+
+    .square2
+    {
+        display: none;
+    }
+
+    .square2Desktop
+    {
+        display: contents;
+    }
+
+    .square1, .square2Desktop, .square3
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .square1Image, .square2Image, .square3Image
+    {
+        width: 50%;
+        height: 500px;
+    }
+    
+    .square1Text, .square2Text, .square3Text
+    {
+        width: 50%;
+        height: 500px;
+    }
+
+}
